@@ -1,6 +1,6 @@
 [package]
 name = "sharp_pencil"
-version = "0.4.2"
+version = "0.4.3"
 authors = ["Shipeng Feng <fsp261@gmail.com>", "Pyry Kontio <pyry.kontio@drasa.eu>"]
 keywords = ["web", "framework", "server", "http"]
 license = "BSD-3-Clause"
@@ -12,16 +12,16 @@ description = "A micro web framework for Rust. (A Pencil fork)"
 categories = ["web-programming::http-server"]
 
 [dependencies]
+formdata = "0.12"
+handlebars = { version = "0.25", features = ["serde_type"] }
+hyper = "0.10"
+lazycell = "0.5"
+log = "0.3"
+mime = "0.2"
+mime_guess = "1.8"
 regex = "0.2"
 serde = "0.9"
 serde_json = "0.9"
-url = "1.2.1"
-log = "0.3.6"
-handlebars = { version = "0.25", features = ["serde_type"] }
-typemap = "0.3.3"
-mime = "0.2.2"
-mime_guess = "1.8.0"
-hyper = "0.10"
-formdata = "0.12.0"
-lazycell = "0.5"
 time = "0.1"
+typemap = "0.3"
+url = "1.5"
